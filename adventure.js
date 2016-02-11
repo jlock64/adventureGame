@@ -14,7 +14,7 @@ var answer = prompt("Are you ready to go on a safari? Type yes or no. If you'd r
     answer = prompt("What animals are you hoping to see most? Lions,  elephants or giraffes?");
 
      //ANSWER EQUALS LIONS//
-     if (answer === "lions") {
+     if (answer === "lions" || answer === "Lions") {
        answer = prompt("Awesome! Lions are cool. Do you think you could  beat a lion in a foot race?");
        if (answer === "yes") {
          confirm("You are sadly mistaken my friend. Lions can reach speeds of 36mph! Even the world's fastest man Usain Bolt, who has been clocked at 28mph couldn't escape a lions attack!");
@@ -81,10 +81,10 @@ var answer = prompt("Are you ready to go on a safari? Type yes or no. If you'd r
         answer = prompt("I like drinking too. We are going to get along just fine. Do you prefer beer or wine?");
 
         // BEER CHOICE //
-        if (answer = "beer") {
+        if (answer === "beer") {
           confirm("I love beer too! Be careful not to drink too much or you will get a beer belly. Hairy beer bellies aren't pretty.");
           answer = prompt("Do you prefer IPA's or stouts?");
-          if (answer === "ipas" || answer === "IPAs" || answer === "IPAS") {
+          if (answer === "ipas" || answer === "IPAs" || answer === "IPAS") || answer === "ipa's" {
             confirm("That's what I'm talking about! Unfortunately IPAs average more than 200 calories per beer. Guess we will starworking on our big hairy bellies together.");
             refreshPage();
           }
@@ -194,7 +194,7 @@ var answer = prompt("Are you ready to go on a safari? Type yes or no. If you'd r
       confirm("Ok smartypants! Let's play trivia! Hit OK to continue.");
       antarticaTrivia();
 
-      if (answer === "antartica") {
+      if (answer === "antartica" || answer === "Antartica") {
         confirm("Correct-o smarty pants!");
       }
       else {
@@ -204,7 +204,7 @@ var answer = prompt("Are you ready to go on a safari? Type yes or no. If you'd r
           confirm("Correct-o smarty pants!");
         }
         else {
-          confirm("Sorry, wrong answer. Next question.")
+          confirm("Wrong again. The correct answer is Antartica.")
         }
       }
 
@@ -227,7 +227,7 @@ var answer = prompt("Are you ready to go on a safari? Type yes or no. If you'd r
           confirm("That's right big boy! Doesn't that make you feel just a bit better about not winning the lottery?")
         }
         else {
-          confirm("Sorry, wrong again.");
+          confirm("Sorry, wrong again. 100% of all lottery winners gain weight. Doesn't that make you feel just a bit better about not winning the lottery?");
         }
       }
 
@@ -242,7 +242,7 @@ var answer = prompt("Are you ready to go on a safari? Type yes or no. If you'd r
           confirm("That's right! Single men have smellier underwear!");
         }
         else {
-          confirm("Wrong answer! Better luck next time.");
+          confirm("Wrong answer! Married men change their underwear twice as often as single men.");
       }
     }
       refreshPage();
