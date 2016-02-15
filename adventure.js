@@ -15,7 +15,7 @@
       answer = prompt("What animals are you hoping to see most? Lions, elephants or giraffes?").trim().toLowerCase();
 
       // LION ANSWER //
-      if (answer === "lions" || answer ==="lion") {
+      if (answer === "lions" || answer === "lion") {
         function lionQuestion () {
         answer = prompt("Awesome! Lions are cool. Do you think you could beat a lion in a foot race?").trim().toLowerCase();
         if (answer === "yes") {
@@ -29,28 +29,29 @@
         } else {
           alert(lionAnswer.unknown);
           lionQuestion();
-        }}
+        }
+        }
         lionQuestion();
 
         // ELEPHANT ANSWER //
       } else if (answer === "elephants" || answer ==="elephant") {
         alert("Cool! Me too! Elephants are the largest land animals in the world!");
         function elephantQuestion () {
-        answer = prompt("Let me test your elephant knowledge. How much can an average elephant heart weigh? 27 pounds or 46 pounds?").trim().toLowerCase();
-        if (answer === "27" || answer === "27 pounds") {
-          alert(elephantAnswer.no);
-          alert("Lets play again!");
-          startGame();
-        } else if (answer === "46" || answer === "46 pounds") {
-          alert(elephantAnswer.yes);
-          alert("Lets play again!");
-          startGame();
-        } else {
-          alert(elephantAnswer.unknown);
-          elephantQuestion();
+          answer = prompt("Let me test your elephant knowledge. How much can an average elephant heart weigh? 27 pounds or 46 pounds?").trim().toLowerCase();
+          if (answer === "27" || answer === "27 pounds") {
+            alert(elephantAnswer.no);
+            alert("Lets play again!");
+            startGame();
+          } else if (answer === "46" || answer === "46 pounds") {
+            alert(elephantAnswer.yes);
+            alert("Lets play again!");
+            startGame();
+          } else {
+            alert(elephantAnswer.unknown);
+            elephantQuestion();
+          }
         }
-      }
-      elephantQuestion();
+        elephantQuestion();
 
       // GIRAFFE ANSWER //
       } else if (answer === "giraffes" || answer === "giraffe") {
